@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.homePage {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e202a;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logoName {
+  display: flex;
+  justify-content: space-evenly;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  font-size: 100px;
+  color: #2b9b90;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoText {
+  font-size: 50px;
+  color: #2b9b90;
+  display: flex; 
+  align-items: center;
+}
+.form {
+  background-color: #282a36;
+  padding: 20px;
+  border-radius: 20px;
+  width: 400px;
+  max-width: 90%;
+}
+footer{
+  position:absolute;
+  bottom: 20px;
+  color: #ebe3e3;
+}
+footer a {
+  color: #2b9b90;
+  transition: all 0.3s ease-in-out;
+}
+.inputGroup{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.mainLabel{
+  margin-bottom: 20px;
+  color: #ebe3e3;
+  margin-top: 10px;
+  margin-left: 10px ;
+}
+.inputBox{
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-bottom: 12px;
+  margin-left: 15px;
+  margin-right: 20px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+  width: 90%;
+}
+.btn{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.joinBtn{
+  background-color: #2b9b90;
+  width: 70px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 19em;
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.joinBtn:hover{
+  background-color: #1e6e66;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.createRoomInfo{
+  margin-top: 20px;
+  color: #ebe3e3;
+  font-size: 14px;
+}
+.createNewBtn{
+  color: #2b9b90;
+  text-decoration: none;
+  border-bottom: 1px solid #2b9b90;
+  transition: all 0.3s ease-in-out;
+}
+.createNewBtn:hover, footer a:hover{
+  color: #1e6e66;
+  border-color: #1e6e66;
 }
