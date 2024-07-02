@@ -93,3 +93,52 @@ footer a {
   color: #1e6e66;
   border-color: #1e6e66;
 }
+.mainWrapper{
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+.sideBar{
+  background-color: #14161e;
+  padding: 16px;
+  color: #ebe3e3;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+}
+.sideInner{
+  flex: 1;
+}
+.clientList{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.userDetail{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+.logoAndText{
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #424242;
+  padding-bottom: 10px;
+}
+.editorLogo{
+  font-size: 30px;
+  color: #2b9b90;
+}
+.logo{
+  font-size: 35px;
+}
+.leaveBtn{
+  margin-top: 20px;
+  background-color: #2b9b90;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.leaveBtn:hover{
+  background-color: #1e6e66;
+}
