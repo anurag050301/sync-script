@@ -5,7 +5,7 @@ const { Server } = require("socket.io");
 const ACTIONS = require("./src/Actions");
 const server = http.createServer(app);
 const io = new Server(server);
-
+const path = require("path");
 app.use(express.static("build"));
 app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
