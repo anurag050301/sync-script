@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate = useNavigate();
   const [roomId, setRoomId] = useState("");
-  const [name,setName] = useState('');
+  const [userName,setUserName] = useState('');
   const createNewRoom = (e) => {
     e.preventDefault();
     const id = uuidv4();
@@ -17,13 +17,13 @@ const Home = () => {
     if(!roomId){
       toast.error('RoomId is required');
     }
-    if(!name){
+    if(!userName){
       toast.error('Your name is required');
     }
     //redirect
     navigate(`/editor/${roomId}`, {
       state: {
-        name, 
+        userName, 
       }
     })
   }
@@ -53,8 +53,8 @@ const Home = () => {
             type="text"
             className="inputBox"
             placeholder="Enter Your Name"
-            onChange={(e) => setName(e.target.value)}
-            value={name}
+            onChange={(e) => setUserName(e.target.value)}
+            value={userName}
             onKeyUp={handleInputEnter}
           />
           <button type="submit" className="btn joinBtn" onClick={joinRoom}>
